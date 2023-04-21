@@ -9,8 +9,7 @@ export function WeatherAppProvider ({children}) {
     useEffect(() => {
         const getWeatherData=async () => {
           try{
-            const data=await axios(`http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={083d255906cd9962e1a6c0de6bcbaab1
-        }`)
+            const data=await axios("http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=083d255906cd9962e1a6c0de6bcbaab1")
         setWeather(data.data);
           }catch(err){
             console.log(err)
