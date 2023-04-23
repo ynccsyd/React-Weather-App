@@ -1,5 +1,5 @@
 import React from 'react'
-import WeatherAppProvider from "./WeatherContext"
+import {WeatherAppProvider} from "./WeatherContext"
 
 const Weather = () => {
   return (
